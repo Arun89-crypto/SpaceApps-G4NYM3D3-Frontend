@@ -88,9 +88,9 @@ const SignUp = ({ isOpen, setIsOpen }) => {
 
                                         <div className='flex items-top gap-2'>
                                             <input type="checkbox" id="terms" className='md:w-5 md:h-5' />
-                                            <lable htmlFor="terms" className="text-gray-400 text-xs ">I agree to Site's <span className='text-violet-100  text-xs'>Terms of service, privacy policy </span>
+                                            <lable htmlFor="terms" className="text-gray-100 text-xs ">I agree to Aveksha's <span className='text-violet-200  text-xs'>Terms of service, privacy policy </span>
                                                 <span > and </span>
-                                                <span className='text-violet-100 text-xs '>Content policies</span>
+                                                <span className='text-violet-200 text-xs '>Content policies</span>
                                             </lable>
                                         </div>
 
@@ -108,8 +108,8 @@ const SignUp = ({ isOpen, setIsOpen }) => {
                                     </div>
                                     <button className='flex justify-center items-center gap-2 bg-white border border-gray-400 py-2  rounded-lg hover:bg-gray-100 w-full text-center text-lg md:text-xl text-gray-500 '> <FcGoogle className='w-8 h-8' /> Continue with Google</button>
 
-                                    <div className='md:text-lg text-gray-500'>
-                                        Already have an account? <span className='text-violet-200  hover:cursor-pointer hover:text-violet-400 ' onClick={closeModal}>Log in</span>
+                                    <div className='md:text-lg text-gray-400'>
+                                        Already have an account? <span className='text-violet-300  hover:cursor-pointer hover:text-violet-500 ' onClick={closeModal}>Log in</span>
                                     </div>
 
                                 </div>

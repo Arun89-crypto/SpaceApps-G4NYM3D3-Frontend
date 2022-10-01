@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Footer from "../Components/Footer";
 import SignIn from "../Components/SignIn";
 import SignUp from "../Components/SignUp";
-import img from "../bg-images/1.png";
+import img from "../bg-images/4.jpg";
 
 const LandingPage = ({ signIn, signUp }) => {
   return (

@@ -97,8 +97,8 @@ const SignIn = ({ isOpen, setIsOpen }) => {
                                     </div>
                                     <button className='flex justify-center items-center gap-2 bg-white border border-gray-400 py-2  rounded-lg hover:bg-gray-100 w-full text-center text-lg md:text-xl text-gray-500 '> <FcGoogle className='w-8 h-8' /> Continue with Google</button>
 
-                                    <div className='md:text-lg text-gray-500'>
-                                        New to our Site? <span className='text-violet-200 hover:cursor-pointer hover:text-violet-400' onClick={wrap}>Create account</span>
+                                    <div className='md:text-lg text-gray-400'>
+                                        New to our Site? <span className='text-violet-300 hover:cursor-pointer hover:text-violet-500' onClick={wrap}>Create account</span>
                                     </div>
 
                                 </div>
