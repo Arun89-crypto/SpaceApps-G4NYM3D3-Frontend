@@ -1,13 +1,10 @@
 import { Dialog, Transition } from '@headlessui/react'
 import { Fragment, useState } from 'react'
-import { useDispatch } from 'react-redux'
 
 // Icons
 import { FcGoogle } from "react-icons/fc"
 import SignUp from './SignUp'
 
-// Redux actions
-import { signIn } from '../../Redux/Reducer/Auth/auth.action'
 
 const SignIn = ({ isOpen, setIsOpen }) => {
     const [openSignUp, setOpenSignUp] = useState(false)
@@ -21,24 +18,6 @@ const SignIn = ({ isOpen, setIsOpen }) => {
     function wrap() {
         closeModal()
         openSignUpModel()
-    }
-
-    const [userData, setUserData] = useState({
-        email: "",
-        password: ""
-    })
-
-    const handleChange = (e) => setUserData(prev=>({...prev, [e.target.name]: e.target.value}))
-
-    const dispatch=useDispatch();
-
-    const submit =()=> {
-        setUserData({
-            email: "",
-            password: ""
-        })
-        dispatch(signIn(userData))
-
     }
 
     return (
@@ -91,22 +70,21 @@ const SignIn = ({ isOpen, setIsOpen }) => {
                                     <form className='flex flex-col gap-5'>
                                         <div className="flex  items-center gap-3 ">
                                             <input type="email" name="email"
-                                                onChange={handleChange}
-                                                placeholder='Enter the e-mail or phone number' id="email"
-                                                value={userData.email} className=" bg-white border border-gray-400 py-2 w-full  rounded-lg md:text-lg px-6" />
+                                                placeholder='Enter the e-mail or phone number' id="email" className=" bg-white border border-gray-400 py-2 w-full  rounded-lg md:text-lg px-6" />
 
                                         </div>
                                         <div className="flex items-center gap-3  ">
                                             <input type="password" name="password"
-                                                onChange={handleChange}
                                                 placeholder='Enter the Password' 
-                                                value={userData.password}
                                                 id="password" className="bg-white border border-gray-400 py-2 w-full  rounded-lg md:text-lg px-6" />
 
                                         </div>
+                                        <div>
+                                            <p className='text-blue-500 hover:cursor-pointer hover:text-blue-800 text-right'>Forgot Password?</p>
+                                        </div>
 
                                         <div className='flex items-center justify-center'>
-                                            <div className=' bg-zomatoRed-300 text-white py-2 rounded-lg  w-full text-center hover:cursor-pointer' onClick={submit}>
+                                            <div className=' bg-blue-500 text-white py-2 rounded-lg  w-full text-center hover:cursor-pointer hover:bg-blue-700' >
                                                 Sign in
                                             </div>
                                         </div>
@@ -120,7 +98,7 @@ const SignIn = ({ isOpen, setIsOpen }) => {
                                     <button className='flex justify-center items-center gap-2 bg-white border border-gray-400 py-2  rounded-lg hover:bg-gray-100 w-full text-center text-lg md:text-xl text-gray-500 '> <FcGoogle className='w-8 h-8' /> Continue with Google</button>
 
                                     <div className='md:text-lg text-gray-500'>
-                                        New to Zomato? <span className='text-zomatoRed-300 hover:cursor-pointer' onClick={wrap}>Create account</span>
+                                        New to Aveksha? <span className='text-blue-500 hover:cursor-pointer hover:text-blue-800' onClick={wrap}>Create account</span>
                                     </div>
 
                                 </div>
