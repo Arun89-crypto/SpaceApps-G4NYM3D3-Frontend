@@ -25,6 +25,9 @@ const EthereumContract = () => {
     return TransactionContract;
 }
 
+// Provider
+// --------
+
 export const TransactionProvider = ({ children }) => {
     const [currentAccount, setCurrentAccount] = useState();
 
