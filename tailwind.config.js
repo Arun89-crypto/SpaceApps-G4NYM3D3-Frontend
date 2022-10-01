@@ -9,6 +9,7 @@ module.exports = {
     extend: {
       colors: {
         acc_gray: "#3d3741",
+        nav_bg:"#23192a"
       },
     },
   },

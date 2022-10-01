@@ -3,10 +3,12 @@ import { AiOutlineArrowLeft } from "react-icons/ai";
 import { ImUserPlus } from "react-icons/im";
 import { HiOutlineUserCircle } from "react-icons/hi";
 import { GoGift } from "react-icons/go";
+import Navbar from "../Components/Navbar";
 
 const Account = () => {
   return (
     <>
+    <Navbar />
       <div className="bg-black h-screen flex">
         <div className="w-1/3 pl-8 pt-28">
           <div className="flex items-center text-white text-2xl gap-8 font-semibold">
