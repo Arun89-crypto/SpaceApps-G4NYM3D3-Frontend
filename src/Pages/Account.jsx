@@ -39,7 +39,7 @@ const Account = () => {
         </div>
         <div className="bg-acc_gray w-2/3">
           <div className="flex items-center justify-end pr-24 pt-28">
-            <button className="text-white font-normal text-sm bg-gray-700 rounded-lg px-6 py-4 shadow-2xl">
+            <button className="text-white font-normal text-sm bg-gray-700 rounded-lg px-6 py-4 shadow-2xl hover:bg-gray-600">
               Connect Wallet
             </button>
           </div>

@@ -9,7 +9,9 @@ module.exports = {
     extend: {
       colors: {
         acc_gray: "#3d3741",
-        nav_bg:"#23192a"
+        nav_bg:"#23192a",
+        log_bt_br:"#B18FE3",
+        log_bt_bg:"#5A4B74"
       },
     },
   },
