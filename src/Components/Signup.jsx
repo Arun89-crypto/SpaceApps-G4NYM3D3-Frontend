@@ -95,7 +95,7 @@ const SignUp = ({ isOpen, setIsOpen }) => {
                                         </div>
 
                                         <div className='flex items-center justify-center'>
-                                            <div className=' bg-violet-500 text-white py-2 rounded-lg  w-full text-center hover:cursor-pointer hover:bg-violet-700' >
+                                            <div className='  text-white py-2 rounded-lg  w-full text-center hover:cursor-pointer hover:bg-gradient-to-r hover:from-sky-500 hover:to-indigo-500 bg-gradient-to-r from-violet-500 to-fuchsia-500' >
                                                 Create Account
                                             </div>
                                         </div>
@@ -106,7 +106,7 @@ const SignUp = ({ isOpen, setIsOpen }) => {
                                         <span className='text-lg text-gray-400'>or</span>
                                         <span className='text-gray-300 -mt-2 w-1/2'>_____________________________</span>
                                     </div>
-                                    <button className='flex justify-center items-center gap-2 bg-white border border-gray-400 py-2  rounded-lg hover:bg-gray-100 w-full text-center text-lg md:text-xl text-gray-500 '> <FcGoogle className='w-8 h-8' /> Continue with Google</button>
+                                    <button className='flex justify-center items-center gap-2 bg-white border border-gray-400 py-2  rounded-lg hover:bg-gray-300 w-full text-center text-lg md:text-xl text-gray-500 '> <FcGoogle className='w-8 h-8' /> Continue with Google</button>
 
                                     <div className='md:text-lg text-gray-400'>
                                         Already have an account? <span className='text-violet-300  hover:cursor-pointer hover:text-violet-500 ' onClick={closeModal}>Log in</span>
