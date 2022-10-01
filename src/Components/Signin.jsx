@@ -9,7 +9,7 @@ import SignUp from './SignUp'
 const SignIn = ({ isOpen, setIsOpen }) => {
     const [openSignUp, setOpenSignUp] = useState(false)
     const openSignUpModel = () => setOpenSignUp((prev) => !prev);
-    // console.log(openSignUp)
+    console.log(openSignUp)
 
     function closeModal() {
         setIsOpen(false)
