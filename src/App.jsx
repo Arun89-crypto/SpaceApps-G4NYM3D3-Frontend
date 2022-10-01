@@ -3,6 +3,7 @@ import { Route } from "react-router-dom";
 import Account from "./Pages/Account";
 import HomePage from "./Pages/HomePage";
 import LandingPage from "./Pages/LandingPage";
+import RewardsPage from "./Pages/RewardsPage";
 import TeamPage from "./Pages/TeamPage";
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
       <Route path="/home" exact component={HomePage} />
       <Route path="/account" exact component={Account} />
       <Route path="/team" exact component={TeamPage} />
+      <Route path="/reward" exact component={RewardsPage} />
     </Route>
   );
 }
