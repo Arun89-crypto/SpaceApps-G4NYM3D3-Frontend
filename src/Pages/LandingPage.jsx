@@ -7,7 +7,7 @@ import img from "../bg-images/4.jpg";
 const LandingPage = ({ signIn, signUp }) => {
   return (
     <>
-      <div className="h-screen w-screen" style={{ backgroundImage: `url(${img})`,backgroundSize:"contain" }}>
+      <div className="h-screen " style={{ backgroundImage: `url(${img})`,backgroundSize:"contain" }}>
         <div className="">
           <p className="text-white">logo</p>
         </div>
