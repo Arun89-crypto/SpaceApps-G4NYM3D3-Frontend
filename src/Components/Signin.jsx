@@ -58,10 +58,10 @@ const SignIn = ({ isOpen, setIsOpen }) => {
                             leaveFrom="opacity-100 scale-100"
                             leaveTo="opacity-0 scale-95"
                         >
-                            <div className="inline-block w-full max-w-md p-6 my-8 overflow-hidden text-left align-middle transition-all transform bg-white shadow-xl rounded-lg">
+                            <div className="inline-block w-full max-w-md p-6 my-8 overflow-hidden text-left align-middle transition-all transform  backdrop-blur-xl backdrop-saturate-200 shadow-xl rounded-lg">
                                 <Dialog.Title
                                     as="h3"
-                                    className="text-3xl font-medium leading-6 text-gray-700 pb-10"
+                                    className="text-3xl font-medium leading-6 text-gray-200 pb-10"
                                 >
                                     Log In
                                 </Dialog.Title>
@@ -80,11 +80,11 @@ const SignIn = ({ isOpen, setIsOpen }) => {
 
                                         </div>
                                         <div>
-                                            <p className='text-blue-500 hover:cursor-pointer hover:text-blue-800 text-right'>Forgot Password?</p>
+                                            <p className='text-violet-200 hover:cursor-pointer hover:text-violet-400 text-right'>Forgot Password?</p>
                                         </div>
 
                                         <div className='flex items-center justify-center'>
-                                            <div className=' bg-blue-500 text-white py-2 rounded-lg  w-full text-center hover:cursor-pointer hover:bg-blue-700' >
+                                            <div className=' bg-violet-500 text-white py-2 rounded-lg  w-full text-center hover:cursor-pointer hover:bg-violet-700' >
                                                 Sign in
                                             </div>
                                         </div>
@@ -98,7 +98,7 @@ const SignIn = ({ isOpen, setIsOpen }) => {
                                     <button className='flex justify-center items-center gap-2 bg-white border border-gray-400 py-2  rounded-lg hover:bg-gray-100 w-full text-center text-lg md:text-xl text-gray-500 '> <FcGoogle className='w-8 h-8' /> Continue with Google</button>
 
                                     <div className='md:text-lg text-gray-500'>
-                                        New to Aveksha? <span className='text-blue-500 hover:cursor-pointer hover:text-blue-800' onClick={wrap}>Create account</span>
+                                        New to our Site? <span className='text-violet-200 hover:cursor-pointer hover:text-violet-400' onClick={wrap}>Create account</span>
                                     </div>
 
                                 </div>

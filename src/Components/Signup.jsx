@@ -51,10 +51,10 @@ const SignUp = ({ isOpen, setIsOpen }) => {
                             leaveFrom="opacity-100 scale-100"
                             leaveTo="opacity-0 scale-95"
                         >
-                            <div className="inline-block w-full max-w-md p-6 my-8 overflow-hidden text-left align-middle transition-all transform bg-white shadow-xl rounded-lg">
+                            <div className="inline-block w-full max-w-md p-6 my-8 overflow-hidden text-left align-middle transition-all transform bg-whit backdrop-blur-xl backdrop-saturate-200 shadow-xl rounded-lg">
                                 <Dialog.Title
                                     as="h3"
-                                    className="text-3xl font-medium leading-6 text-gray-700 pb-10"
+                                    className="text-3xl font-medium leading-6 text-gray-200 pb-10"
                                 >
                                     Sign Up
                                 </Dialog.Title>
@@ -64,38 +64,38 @@ const SignUp = ({ isOpen, setIsOpen }) => {
                                         <div className="flex  items-center gap-3 ">
                                             <input type="text" name="review"
                                                 placeholder='Full Name' id="fullname" 
-                                                className=" bg-white border border-gray-400 py-2 w-full  rounded-lg md:text-lg px-6" />
+                                                className=" backdrop-blur-xl backdrop-saturate-200 border border-gray-400 py-2 w-full  rounded-lg md:text-lg px-6" />
 
                                         </div>
                                         <div className="flex items-center gap-3  ">
                                             <input type="email" name="review"
                                                 placeholder='Email' id="email" 
-                                                className="bg-white border border-gray-400 py-2 w-full  rounded-lg md:text-lg px-6" />
+                                                className="bg-whit border border-gray-400 py-2 w-full  rounded-lg md:text-lg px-6" />
 
                                         </div>
                                         <div className="flex items-center gap-3  ">
                                             <input type="password" name="password"
                                                 placeholder='Password' id="password" 
-                                                className="bg-white border border-gray-400 py-2 w-full  rounded-lg md:text-lg px-6" />
+                                                className="bg-whit border border-gray-400 py-2 w-full  rounded-lg md:text-lg px-6" />
 
                                         </div>
                                         <div className="flex items-center gap-3  ">
                                             <input type="password" name="password"
                                                 placeholder='Confirm Password' id="password" 
-                                                className="bg-white border border-gray-400 py-2 w-full  rounded-lg md:text-lg px-6" />
+                                                className="bg-whit border border-gray-400 py-2 w-full  rounded-lg md:text-lg px-6" />
 
                                         </div>
 
                                         <div className='flex items-top gap-2'>
                                             <input type="checkbox" id="terms" className='md:w-5 md:h-5' />
-                                            <lable htmlFor="terms" className="text-gray-500 text-xs ">I agree to Aveksha's <span className='text-blue-500 text-xs'>Terms of service, privacy policy </span>
+                                            <lable htmlFor="terms" className="text-gray-400 text-xs ">I agree to Site's <span className='text-violet-100  text-xs'>Terms of service, privacy policy </span>
                                                 <span > and </span>
-                                                <span className='text-blue-500 text-xs '>Content policies</span>
+                                                <span className='text-violet-100 text-xs '>Content policies</span>
                                             </lable>
                                         </div>
 
                                         <div className='flex items-center justify-center'>
-                                            <div className=' bg-blue-500 text-white py-2 rounded-lg  w-full text-center hover:cursor-pointer hover:bg-blue-700' >
+                                            <div className=' bg-violet-500 text-white py-2 rounded-lg  w-full text-center hover:cursor-pointer hover:bg-violet-700' >
                                                 Create Account
                                             </div>
                                         </div>
@@ -109,7 +109,7 @@ const SignUp = ({ isOpen, setIsOpen }) => {
                                     <button className='flex justify-center items-center gap-2 bg-white border border-gray-400 py-2  rounded-lg hover:bg-gray-100 w-full text-center text-lg md:text-xl text-gray-500 '> <FcGoogle className='w-8 h-8' /> Continue with Google</button>
 
                                     <div className='md:text-lg text-gray-500'>
-                                        Already have an account? <span className='text-blue-500 hover:cursor-pointer hover:text-blue-800' onClick={closeModal}>Log in</span>
+                                        Already have an account? <span className='text-violet-200  hover:cursor-pointer hover:text-violet-400 ' onClick={closeModal}>Log in</span>
                                     </div>
 
                                 </div>
