@@ -14,7 +14,7 @@ function App() {
         <Route path="/account/:tabName" exact component={Account} />
         {/* <Route path="/account/reward" exact component={Account} /> */}
         <Route path="/team" exact component={TeamPage} />
-        <Route path="/chat" exact component={ChatPage} />
+        <Route path="/chat/:id" exact component={ChatPage} />
       </Switch>
       {/* <LandHOC path="/" exact component={LandingPage}/> */}
     </>
