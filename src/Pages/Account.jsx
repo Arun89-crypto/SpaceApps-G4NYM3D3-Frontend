@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { useParams } from "react-router-dom";
 
 import { AiOutlineArrowLeft } from "react-icons/ai";
 import { ImUserPlus } from "react-icons/im";
@@ -8,8 +9,10 @@ import { GoGift } from "react-icons/go";
 import Navbar from "../Components/Navbar";
 import img from "../bg-images/3.png";
 import User from "../Components/User.Component";
+import Reward from "../Components/Reward.Component";
 
 const Account = () => {
+  const { tabName } = useParams();
   return (
     <>
       <Navbar />
@@ -25,7 +28,7 @@ const Account = () => {
               </div>
             </div>
             <div className="mt-20 pl-10 flex flex-col gap-6">
-              <Link to="/user">
+              <Link to="/account/user">
                 <div className="text-white flex items-center  gap-4">
                   <HiOutlineUserCircle className="w-10 h-10 font-thin " />
                   <p className="bg-transparent text-gray-200 font-normal pb-2 w-full text-2xl border-b-2 outline-none hover:cursor-pointer">
@@ -33,7 +36,7 @@ const Account = () => {
                   </p>
                 </div>
               </Link>
-              <Link to="/rewards">
+              <Link to="/account/reward">
                 <div className="text-white flex items-center  gap-4">
                   <GoGift className="w-10 h-10 font-thin " />
                   <p className="bg-transparent text-gray-200 font-normal pb-2 w-full text-2xl border-b-2 outline-none hover:cursor-pointer">
@@ -43,7 +46,8 @@ const Account = () => {
               </Link>
             </div>
           </div>
-          <User />
+          {tabName === "user" && <User />}
+          {tabName === "reward" && <Reward />}
         </div>
       </div>
     </>
