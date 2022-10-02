@@ -22,8 +22,7 @@ const ChatPage = () => {
             </div>
 
             <div className="text-whtie text-lg flex gap-4 items-center px-6">
-              <AiOutlinePlus className="text-white w-6 h-6" />
-              <AiOutlineMinus className="text-white w-6 h-6" />
+              <AiOutlinePlus className="text-white w-8 h-8" />
             </div>
           </div>
           <div className="bg-mes_bg py-3 " style={{ height: "79.3vh" }}>

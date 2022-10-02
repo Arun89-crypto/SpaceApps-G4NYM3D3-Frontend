@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+
 import Footer from "../Components/Footer";
 import SignIn from "../Components/SignIn";
 import SignUp from "../Components/SignUp";
@@ -12,7 +13,7 @@ const LandingPage = ({ signIn, signUp }) => {
           <p className="text-white">logo</p>
         </div>
         <div className="text-white">
-          <div className="flex justify-end items-center gap-12 px-20 py-24">
+          <div className="flex justify-end items-center gap-12 px-20 py-10">
             <button
               className="border-2 w-28 h-12 text-white border-log_bt_br hover:bg-log_bt_bg"
               onClick={signIn}
@@ -27,7 +28,7 @@ const LandingPage = ({ signIn, signUp }) => {
             </button>
           </div>
         </div>
-        <div className=" pl-32">
+        <div className=" pl-32 py-28">
           <p className="text-6xl text-white font-extrabold  w-1/2">
             SAVE THE EARTH FROM ANOTHER CARRINGTON EVENT!
           </p>

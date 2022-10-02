@@ -29,12 +29,7 @@ const RewardsPage = () => {
               <BiUserCircle className="w-8 h-8" />
               <p className="text-lg">User ID</p>
             </div>
-            <div>
-              {/* <button className="text-white font-normal text-sm bg-gray-700 rounded-lg px-6 py-4 shadow-2xl hover:bg-gray-600"> */}
-              <button className="text-white font-normal text-sm bg-gradient-to-r from-violet-500 to-fuchsia-500 rounded-lg px-6 py-4 shadow-2xl hover:bg-gradient-to-r hover:from-sky-500 hover:to-indigo-500">
-                Connect Wallet
-              </button>
-            </div>
+            
           </div>
         </div>
         <div className="flex justify-center">
