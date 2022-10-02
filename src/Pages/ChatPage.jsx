@@ -27,7 +27,7 @@ const ChatPage = () => {
             </div>
           </div>
           <div className="bg-mes_bg py-3 " style={{ height: "79.3vh" }}>
-            {/* Search Bar */}
+            {/* Search Bar */} 
             <div className="flex items-center gap-4 px-6 py-3 border-2 border-gray-100 rounded-full mx-4 ">
               <FiSearch className="text-white w-5 h-5" />
               <input

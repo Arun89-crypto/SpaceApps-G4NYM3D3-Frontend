@@ -88,7 +88,7 @@ const SignUp = ({ isOpen, setIsOpen }) => {
 
                                         <div className='flex items-top gap-2'>
                                             <input type="checkbox" id="terms" className='md:w-5 md:h-5' />
-                                            <lable htmlFor="terms" className="text-gray-100 text-xs ">I agree to Aveksha's <span className='text-violet-200  text-xs'>Terms of service, privacy policy </span>
+                                            <lable htmlFor="terms" className="text-gray-100 text-xs ">I agree to Site's <span className='text-violet-200  text-xs'>Terms of service, privacy policy </span>
                                                 <span > and </span>
                                                 <span className='text-violet-200 text-xs '>Content policies</span>
                                             </lable>
